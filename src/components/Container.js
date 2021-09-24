@@ -12,6 +12,7 @@ import {
   faRss,
   faTasks
 } from "@fortawesome/free-solid-svg-icons";
+import Card from "./Card";
 
 function Container() {
   return (
@@ -44,54 +45,29 @@ function Container() {
 
         <div className="dashboard-links">
           <div>
-            <a href="https://www.facebook.com/">
-              <FontAwesomeIcon icon={faFacebook} size="2x" />
-            </a>
+            <FontAwesomeIcon icon={faFacebook} size="2x" color="#0673E7" />
           </div>
           <div>
-            <a href="https://www.facebook.com/">
-              <FontAwesomeIcon icon={faInstagram} size="2x" />
-            </a>
+            <FontAwesomeIcon icon={faInstagram} size="2x" color="#C93E81" />
           </div>
           <div>
-            <a href="https://www.facebook.com/">
-              <FontAwesomeIcon icon={faTwitter} size="2x" color="green" />
-            </a>
+            <FontAwesomeIcon icon={faTwitter} size="2x" color="#1D9BF0" />
           </div>
           <div>
-            <a href="https://www.facebook.com/">
-              <FontAwesomeIcon icon={faGithub} size="2x" />
-            </a>
+            <FontAwesomeIcon icon={faGithub} size="2x" color="#" />
           </div>
         </div>
       </div>
       <div className="enroled-courses">
-        <h1>Enroled Courses</h1>
-        <input type="text" />
-
-        <div className="course">
-          <img src="https://via.placeholder.com/50" alt="" />
-          <h3>title</h3>
-          <p>description</p>
-          <h4>60%</h4>
+        <div>
+          <h1>Enroled Courses</h1>
+          <input type="text" placeholder="search" />
         </div>
-        <div className="course">
-          <img src="https://via.placeholder.com/50" alt="" />
-          <h3>title</h3>
-          <p>description</p>
-          <h4>60%</h4>
-        </div>
-        <div className="course">
-          <img src="https://via.placeholder.com/50" alt="" />
-          <h3>title</h3>
-          <p>description</p>
-          <h4>60%</h4>
-        </div>
-        <div className="course">
-          <img src="https://via.placeholder.com/50" alt="" />
-          <h3>title</h3>
-          <p>description</p>
-          <h4>60%</h4>
+        <div className="courses">
+          <Card title="React Js" img="../../../imgs/react.svg" />
+          <Card title="Node Js" img="../../../imgs/nodejs.svg" />
+          <Card title="MongoDB" img="../../../imgs/mongodb.svg" />
+          <Card title="TypeScript" img="../../../imgs/typescript.svg" />
         </div>
       </div>
     </div>
