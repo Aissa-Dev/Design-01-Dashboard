@@ -3,7 +3,7 @@ import React from "react";
 function Card({ title, img }) {
   return (
     <div className="course">
-      <img src={img} alt="" />
+      <img src={img} alt={img} />
       <div className="course-info">
         <div className="description">
           <h2>{title}</h2>
